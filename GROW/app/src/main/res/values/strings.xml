@@ -11,4 +11,10 @@
     </string-array>
 
 
+    <string-array name="ComboEtiqueta">
+        <item>SELECCIONA</item>
+        <item>FLORES</item>
+        <item>BULBOS</item>
+    </string-array>
+
 </resources>

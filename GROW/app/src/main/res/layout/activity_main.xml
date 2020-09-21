@@ -119,8 +119,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="535dp"
-        android:layout_height="302dp"
+        android:layout_width="549dp"
+        android:layout_height="394dp"
         android:background="@drawable/bordes"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Valor V:   "
+                android:text="Válvula:   "
                 android:textAlignment="viewEnd"
                 android:textSize="33sp"
                 android:textStyle="bold" />
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Ingrese V"
+                android:hint="Valvula"
                 android:inputType="number"
                 android:textSize="30sp" />
         </LinearLayout>
@@ -202,8 +202,31 @@
                 android:id="@+id/cmbLado"
                 android:layout_width="320dp"
                 android:layout_height="52dp"
-                android:scrollbarSize="40dp"
+                android:layout_weight="1"
                 android:entries="@array/ComboLado"
+                android:scrollbarSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Etiqueta:   "
+                android:textAlignment="viewEnd"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/cmbEtiqueta"
+                android:layout_width="260dp"
+                android:layout_height="52dp"
+                android:entries="@array/ComboEtiqueta"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
@@ -212,14 +235,13 @@
         android:id="@+id/btnListo"
         android:layout_width="188dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="116dp"
         android:text="LISTO"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.583" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

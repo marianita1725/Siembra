@@ -11,6 +11,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
     private Spinner spinnerLado;
+    private Spinner spinnerEtiqueta;
     private Button btnListo;
 
     @Override
@@ -19,12 +20,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         spinnerLado=(Spinner)findViewById(R.id.cmbLado);
+        spinnerEtiqueta=(Spinner)findViewById(R.id.cmbEtiqueta) ;
         btnListo = (Button) findViewById(R.id.btnListo);
 
         String[] opciones={"NORTE","SUR"};
+        String[] etiquetas={"FLORES","BULBOS"};
 
         ArrayAdapter <String> adapter=new ArrayAdapter<>(this,R.layout.sniper_size , opciones);
         spinnerLado.setAdapter(adapter);
+
+        ArrayAdapter <String> adapterEtiqueta=new ArrayAdapter<>(this,R.layout.sniper_size , etiquetas);
+        spinnerEtiqueta.setAdapter(adapterEtiqueta);
 
         btnListo.setOnClickListener(new View.OnClickListener() {
             @Override

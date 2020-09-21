@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GROW</string>
+    <string name="empty"></string>
+    <string name="tituloSiembra">REGISTRO SIEMBRA</string>
+    <string name="btnAgregar">AGREGAR</string>
+
+    <string-array name="ComboLado">
+        <item>SELECCIONA</item>
+        <item>NORTE</item>
+        <item>SUR</item>
+    </string-array>
+
+
+</resources>
